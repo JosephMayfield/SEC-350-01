@@ -1,3 +1,4 @@
+set nat source rule 10 source address 172.16.50.0/29
 set nat source rule 10 translation address 'masquerade'
 set nat source rule 20 description 'LAN to WAN'
 set nat source rule 20 outbound-interface name 'eth0'
