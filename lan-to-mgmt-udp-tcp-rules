@@ -1,0 +1,7 @@
+set firewall ipv4 name LAN-to-MGMT rule 10 action accept
+set firewall ipv4 name LAN-to-MGMT rule 10 protocol tcp_udp
+set firewall ipv4 name LAN-to-MGMT rule 10 destination group port-group AD-TCP
+
+set firewall ipv4 name LAN-to-MGMT rule 11 action accept
+set firewall ipv4 name LAN-to-MGMT rule 11 protocol udp
+set firewall ipv4 name LAN-to-MGMT rule 11 destination group port-group AD-UDP
