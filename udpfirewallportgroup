@@ -1,6 +1,0 @@
-set firewall group port-group AD-UDP port 53
-set firewall group port-group AD-UDP port 88
-set firewall group port-group AD-UDP port 123
-set firewall group port-group AD-UDP port 137
-set firewall group port-group AD-UDP port 138
-set firewall group port-group AD-UDP port 464
