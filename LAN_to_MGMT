@@ -1,0 +1,8 @@
+set firewall ipv4 name LAN_to_MGMT rule 30 action accept
+set firewall ipv4 name LAN_to_MGMT rule 30 description "AD TCP to DC"
+set firewall ipv4 name LAN_to_MGMT rule 30 destination port 53,88,135,389,445,464,636,3268-3269,9389,49152-65535
+set firewall ipv4 name LAN_to_MGMT rule 30 protocol tcp
+set firewall ipv4 name LAN_to_MGMT rule 31 action accept
+set firewall ipv4 name LAN_to_MGMT rule 31 description "Allow AD UPD to DC"
+set firewall ipv4 name LAN_to_MGMT rule 31 destination port 53,88,132,389,464
+set firewall ipv4 name LAN_to_MGMT rule 31 protocol udp
